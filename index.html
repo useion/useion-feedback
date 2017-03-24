@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta content="text/html; charset=utf-8">
+<title>Give feedback</title>
+<script type="text/javascript" src="post.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</head>
+<body onload="main()">
+
+<form id="give-feedback"><!-- **The system prompts for the user's name, email, and feedback** -->
+    <p>
+		<label for="name">Name:</label>
+    	<input id="name" name="name" type="text" value="" />
+	</p>
+	<p>
+		<label for="email">Email:</label>
+    	<input id="email" name="email" type="text" value="" />
+	</p>
+    <p>
+		<label for="feedback">Feedback:</label><br/>
+    	<textarea id="feedback" name="feedback" cols="40"></textarea>
+	</p>
+    <input type="submit" value="Send" />
+	<p id="result"></p>
+</form>
+
+</body>
+</html>

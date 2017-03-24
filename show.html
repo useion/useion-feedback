@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta content="text/html; charset=utf-8">
+<title>Show feedbacks</title>
+<script type="text/javascript" src="post.js"></script>
+<script type="text/javascript" src="model/Spreadsheet.js"></script>
+<script>
+    function show () {
+        Spreadsheet.get(function (data) {
+            data = data.rows;
+            for (var i in data) {
+                document.getElementById("feedbacks").innerHTML += "<p>On "+data[i][0]+", "+data[i][1]+" wrote:</p><p>"+data[i][3]+"</p>";
+            }
+        })
+    }
+</script>
+</head>
+<body onload="show()">
+
+<div id="feedbacks">
+</div>
+
+</body>
+</html>
